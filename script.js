@@ -82,3 +82,5 @@ function handleHeaderClick() {
 
 headerSection.addEventListener('click', handleHeaderClick);
 resetGame();
+
+fetch('https://your-app.onrender.com/login', { ... });
