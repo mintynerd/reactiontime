@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-section" style="width:100vw; display:flex; justify-content:center; align-items:center; background:#fff; padding:30px 0;">
+        <form id="login-form" style="display:flex; flex-direction:column; gap:10px; min-width:300px;">
+            <div id="login-error" style="color:red; font-size:0.95rem;"></div>
+            <input type="text" id="login-username" placeholder="Username" required style="padding:8px; font-size:1rem;">
+            <input type="password" id="login-password" placeholder="Password" required style="padding:8px; font-size:1rem;">
+            <button type="submit" style="padding:8px 16px; font-size:1rem;">Login</button>
+            <div style="display:flex; justify-content:space-between;">
+                <a href="#" id="show-signup" style="font-size:0.95rem;">Sign up</a>
+                <a href="#" id="show-forgot" style="font-size:0.95rem;">Forgot password?</a>
+            </div>
+        </form>
+        <form id="signup-form" style="display:none; flex-direction:column; gap:10px; min-width:300px;">
+            <div id="signup-error" style="color:red; font-size:0.95rem;"></div>
+            <input type="text" id="signup-username" placeholder="Username" required style="padding:8px; font-size:1rem;">
+            <input type="email" id="signup-email" placeholder="Email" required style="padding:8px; font-size:1rem;">
+            <input type="password" id="signup-password" placeholder="Password" required style="padding:8px; font-size:1rem;">
+            <button type="submit" style="padding:8px 16px; font-size:1rem;">Sign Up</button>
+            <a href="#" id="show-login" style="font-size:0.95rem;">Already have an account?</a>
+        </form>
+        <form id="forgot-form" style="display:none; flex-direction:column; gap:10px; min-width:300px;">
+            <div id="forgot-error" style="color:red; font-size:0.95rem;"></div>
+            <input type="email" id="forgot-email" placeholder="Enter your email" required style="padding:8px; font-size:1rem;">
+            <button type="submit" style="padding:8px 16px; font-size:1rem;">Reset Password</button>
+            <a href="#" id="show-login2" style="font-size:0.95rem;">Back to login</a>
+        </form>
+    </div>
+    <div id="logout-section" style="display:none; width:100vw; text-align:right; padding:10px 30px 0 0;">
+        <span id="welcome-user" style="margin-right:10px;"></span>
+        <button id="logout-btn" style="padding:6px 14px; font-size:1rem;">Logout</button>
+    </div>
+    <div class="header-section" id="headerSection">
+        <div id="game-container"></div>
+    </div>
+    <div class="info-section">
+        <!-- Info content will go here later -->
+    </div>
+    <script src="script.js"></script>
+    <script src="logins.js"></script>
+</body>
+</html>
