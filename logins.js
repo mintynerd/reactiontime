@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Login
     loginForm.onsubmit = function(e) {
         e.preventDefault();
-        fetch('http://localhost:3001/login', {
+        fetch('https://reactiontime-meqv.onrender.com/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
